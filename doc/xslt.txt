@@ -1,0 +1,111 @@
+*xslt.txt*	XSLT ftplugin
+
+|Xslt.01|		Introduction
+|Xslt.02|		Usage
+|Xslt.03|		Keywords
+|Xslt.04|		Revision History (ChangeLog)
+|Xslt.05|		Contact, Help, Credits
+
+
+==============================================================================
+*Xslt.01*  Introduction
+
+The Xslt plugin is the best vim plugin available to edit xsl files. I say its
+the best because I could not find any other script and had to make one!
+
+==============================================================================
+*Xslt.02*  Usage
+
+To install the Xslt plugin, put the xslt.vim file into the ftplugin
+subdirectory, contained in one of the directories in your 'runtimepath'.
+(Such as /usr/share/vim/vimfiles/ on UNIX, or "C:\Vim\vimfiles" on Win32).
+You'll need Vim 6.0 or above.
+
+Once the Xslt plugin is installed, simply press the <F2> key in Insert
+mode after the proper keywords and xsl text will be generated
+
+
+To install the Xslt documentation, copy this textfile (xslt.txt) to
+the "doc" directory in your 'runtimepath'.  (e.g. "$HOME/.vim/doc" on UNIX),
+then run the |helptags| command on that directory from inside Vim.  (e.g.
+":helptags ~/.vim/doc").  See |add-local-help| for details.
+
+
+==============================================================================
+*Xslt.03*  keywords
+
+xsl<F2> generates				
+
+<?xml version="1.0" ?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Tranform" version="1.0">
+	
+</xsl:stylesheet>
+
+
+
+var1 tm<F2> generates a template match statement
+
+var1 tn<F2> generates a template name statement
+
+var1 fe<F2> generates a foreach statement
+
+var1 vo<F2> generates a value-of statement
+
+var1 so<F2> generates a sort statement
+
+var1 if<F2> generates a if statement
+
+var1 ch<F2> generates a choose/when/otherwise statement
+
+var1 at<F2> generates a apply-templates statement
+
+var1 ct<F2> generates a call-template statement
+
+var1 var2 pa<F2> generates a param name="var1" select="var2" statement
+
+var1 wp<F2> generates a with-param name="var1" select="var2" statement
+
+out<F2> generates a output statement
+
+
+==============================================================================
+*Xslt.04*  Revision History (ChangeLog)
+
+						*Xslt-1.0*
+
+Initial release.
+
+
+==============================================================================
+*Xslt.05*  Contact, Help, Credits
+
+				*Xslt-help* *Xslt-author*
+
+The author of the Xslt plugin is Pedro Alves <pedro.alves@zmail.pt>
+
+Just email me directly if you have any queries about the plugin.  I don't bite
+:).
+
+						*Xslt-webpage*
+
+There isn't a webpage for the plugin at the moment.  You can always find the
+latest version at the Vim Online website, at http://www.vim.org/.
+
+						*Xslt-thanks*
+
+Xslt wouldn't be as useful as it is without the help of the following
+people (whether they realise it or not ;):
+
+  Devin Weaver ~
+  For the excellent xmledit plugin, where this simple plugin is based
+
+  Andre Pang ~
+  I hate to write documentation, so I picked his tabindent.doc
+  (another really great script) and just changed the necessary stuff
+
+Thanks!
+
+
+==============================================================================
+ vim:tw=78:sts=0:ts=8:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:
+

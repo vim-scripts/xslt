@@ -1,0 +1,9 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1328
+
+The Xslt plugin is the best vim plugin available to edit xsl files. I say its  
+the best because I could not find any other script and had to make one!
+
+Once the Xslt plugin is installed, simply press the <F2> key in Insert
+mode after the proper keywords and xsl text will be generated.
+
+You also need to have xmledit plugin installed.
