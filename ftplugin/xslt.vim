@@ -1,8 +1,8 @@
 " Vim script file                                           vim600:fdm=marker:
 " FileType:	XSLT
 " Maintainer:	Pedro Alves pedro.alvesATzmail.pt
-" Last Change:  $Date: 2005/08/14 18:10:01 $
-" Version:      $Revision: 1.1.1.1 $
+" Last Change:  $Date: 2005/08/16 09:29:20 $
+" Version:      $Revision: 1.1 $
 
 " This is a wrapper script to add extra xslt support to xml documents. Uses
 " the excelent xml.vim
@@ -27,7 +27,7 @@ function Load_Subs()
 	let wrd = expand("<cword>")
 
 	if wrd == "xsl"
-		exe "norm bdWa<?xml version=\"1.0\<right> ?>\<cr><xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Tranform\<right> version=\"1.0\<right>>>"
+		exe "norm bdWa<?xml version=\"1.0\<right> ?>\<cr><xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\<right> version=\"1.0\<right>>>"
 			
 	elseif wrd == "tm"
 		exe "norm bdW\"zdBa<xsl:template match=\"\<c-r>z\<right> >>"
@@ -67,6 +67,3 @@ function Load_Subs()
 			
 	endif
 endfunction
-
-
-

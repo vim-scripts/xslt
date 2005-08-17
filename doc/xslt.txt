@@ -73,7 +73,9 @@ out<F2> generates a output statement
 
 						*Xslt-1.0*
 
-Initial release.
+1.0.0 - Initial release.
+
+1.0.1 - There was a bug in the namespace url
 
 
 ==============================================================================
@@ -107,5 +109,3 @@ Thanks!
 
 
 ==============================================================================
- vim:tw=78:sts=0:ts=8:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:
-
